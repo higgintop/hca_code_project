@@ -1,0 +1,13 @@
+{
+  "name": "hca_code_project",
+  "version": "0.0.1",
+  "homepage": "https://github.com/higgintop/hca_code_project",
+  "authors": [
+    "Allison Higginbotham <higgintop@gmail.com>"
+  ],
+  "description": "HCA Web and Social Media Services Coding Exercise",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-sass": "~3.3.3"
+  }
+}
