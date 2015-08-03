@@ -4,62 +4,116 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Title</title>
+    <title>Site Title</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <!-- Navigation for site -->
-    <nav>TO DO: Navigation</nav>
+    <!-- -->
+    <div class="container">
+      <!-- Navigation for site -->
+	    <nav role="navigation" class="navbar navbar-default">
+	      <div class="navbar-header">
+	        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	        </button>
+	        <a href="#" class="navbar-brand">Brand</a>
+	      </div>
+	      <div id="navbarCollapse" class="collapse navbar-collapse">
+	          <ul class="nav navbar-nav navbar-right">
+	              <li class="active"><a href="#">About</a></li>
+	              <li><a href="#">Articles</a></li>
+	              <li><a href="#">Blog</a></li>
+	          </ul>
+	      </div>
+	    </nav>                              		
 
-    <!-- section introducing the site -->
-    <header>
-    	 <h1>Site about me</h1>
-    	 <p>Some text to introduce the site to viewers.  This is a brief synopsis of what this site is all about.  This site is all about me!</p>
-    </header>
+	    <!-- header introducing the site -->
+	    <header>
+	    	 <h1>Site about me</h1>
+	    	 <p>Some text to introduce the site to viewers.  This is a brief synopsis of what this site is all about.  This site is all about me!</p>
+	    </header>
 
-    <!-- 1st section: 3 col layout -->
-    <section>
-    	<div>
-    	  <div><span class="glyphicon glyphicon-envelope"></span></div>
-    	  <h2>1st block of content</h2>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam aspernatur corporis dolorum, architecto deleniti ad autem quas cum veniam. Eaque voluptate tempore sunt animi, fuga. Aspernatur dicta, laborum rem velit.
-				</p>
-				<button>Read More: To the modal</button>
-    	</div>
-    	<div>
-    	  <div><span class="glyphicon glyphicon-envelope"></span></div>
-    	  <h2>2nd block of content</h2>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam aspernatur corporis dolorum, architecto deleniti ad autem quas cum veniam. Eaque voluptate tempore sunt animi, fuga. Aspernatur dicta, laborum rem velit.
-				</p>
-				<button>Read More: To the modal</button>
-    	</div>
-    	<div>
-    	  <div><span class="glyphicon glyphicon-envelope"></span></div>
-    	  <h2>3rd block of content</h2>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam aspernatur corporis dolorum, architecto deleniti ad autem quas cum veniam. Eaque voluptate tempore sunt animi, fuga. Aspernatur dicta, laborum rem velit.
-				</p>
-				<button>Read More: To the modal</button>
-    	</div>
-    </section>
+	    <!-- 1st section: 3 col layout -->
+	    <section class="primary-content-section">
+	      <div class="row">
+	        <div class="col-md-4">
+		    	  <article class="article-1">
+		    	    <div class="icon-wrapper"><span class="glyphicon glyphicon-blackboard"></span></div>
+		    	    <h3>First, There Was Me</h3>
+						  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam 	    aspernatur corporis dolorum, architecto deleniti ad autem quas  
+						      cum veniam. Eaque voluptate tempore sunt animi, fuga. Aspernatur dicta, laborum rem velit.
+						  </p>
+						  <button class="btn btn-default" data-toggle="modal" data-target="#myModal">Read More</button>
 
-    <!-- Second section -->
-    <div>
-    	<section>
-    		<h2>Secondary content information</h2>
-    		<p>Body: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis suscipit, velit, nam nihil odit necessitatibus cum exercitationem cupiditate officia provident, doloribus accusamus! Quaerat, modi ullam veniam fugiat assumenda officiis quam.</p>
-    	</section>
-    	<aside>
-    		<img src="http://placehold.it/100x100">
-    		<p>Image caption</p>
-    	</aside>
-    </div>
-    
-    <footer>
-    	TO DO: footer
-    </footer>
-    
+							  <!-- Modal -->
+							  <div class="modal fade" id="myModal" role="dialog">
+							    <div class="modal-dialog">
+							      <!-- Modal content-->
+							      <div class="modal-content">
+							        <div class="modal-header">
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							          <h4 class="modal-title">Continuation ...</h4>
+							        </div>
+							        <div class="modal-body">
+							          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae obcaecati, fuga animi debitis voluptate repellat, atque nihil unde ipsa! Sint, accusantium temporibus beatae nisi? Repudiandae perferendis ut architecto cumque molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt repellat quis vero sint recusandae at numquam animi distinctio atque, facere dolore maxime doloremque, hic, delectus consequuntur voluptate modi, veritatis ipsam.</p>
+							        </div>
+							        <div class="modal-footer">
+							          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							        </div>
+							      </div>
+							    </div>
+							  </div>
+		    	  </article>
+	    	  </div>
+	    	  <div class="col-md-4">
+		    	  <article class="article-2">
+		    	    <div class="icon-wrapper"><span class="glyphicon glyphicon-cd"></span></div>
+		    	    <h3>Then, Me</h3>
+						  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam aspernatur corporis dolorum, architecto deleniti ad autem quas cum veniam. Eaque voluptate tempore sunt animi, fuga. Aspernatur dicta, laborum rem velit.
+						  </p>
+						  <button class="btn btn-default" data-toggle="modal" data-target="#myModal">Read More</button>		    	  </article>
+	    	  </div>
+	    	  <div class="col-md-4">
+		    	  <article class="article-3">
+		    	    <div class="icon-wrapper"><span class="glyphicon glyphicon-wrench"></span></div>
+		    	    <h3>Finally came me.</h3>
+						  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam aspernatur corporis dolorum, architecto deleniti ad autem quas cum veniam. Eaque voluptate tempore sunt animi, fuga. Aspernatur dicta, laborum rem velit.
+						  </p>
+						  <button class="btn btn-default" data-toggle="modal" data-target="#myModal">Read More</button>		    	  </article>
+	    	  </div>
+	      </div>
+	    </section>
+
+	    <!-- Second section -->
+	    <section class="secondary-content-section">
+	      <div class="row">
+	        <div class="col-md-8">
+			    	<article>
+			    		<h2>Secondary content information</h2>
+			    		<p>Body: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis suscipit, velit, nam nihil odit necessitatibus cum exercitationem cupiditate officia provident, doloribus accusamus! Quaerat, modi ullam veniam fugiat assumenda officiis quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt officia, recusandae magnam maiores deleniti molestias perferendis et debitis commodi in, facere facilis dignissimos rem totam ipsa harum tempore nobis architecto!</p>
+			    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nisi, cumque ratione odit, pariatur assumenda voluptas. Iure, eveniet debitis temporibus eum tempore, odit, vero sunt maxime qui adipisci dolores. Nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, laboriosam ab praesentium officiis blanditiis quos harum incidunt animi id, inventore, delectus enim. Beatae accusantium doloribus laboriosam earum nihil, ducimus. Quia.<p>
+			    	</article>
+		    	</div>
+		    	<div class="col-md-4">
+			    	<aside>
+			    		<img src="http://placehold.it/200x200">
+			    		<figcaption>Oh and here we have a lovely image caption.</figcaption>
+			    	</aside>
+		    	</div>
+	    	</div>
+	    </section>
+	    
+	    <footer>
+	    	TO DO: footer
+	    </footer>
+	  </div>
+	    
 
   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
   </body>
   </html>

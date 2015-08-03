@@ -1,6 +1,102 @@
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons';
 
-h1 {
-	color: blue;
+
+/*******************************************************
+Nav Styles
+********************************************************/
+.navbar {
+	margin-bottom: 0;
 }
+/*******************************************************
+Header Styles
+********************************************************/
+
+header {
+	margin-top: 0px;
+	background-image: url('/img/headerBackground.jpg');
+	background-size: cover;
+	padding: 20% 10%;
+	text-align: center;
+
+	h1 {
+		color: #fff;
+	}
+
+	p {
+		color: #fff;
+	}
+}
+
+/*******************************************************
+Content Styles
+********************************************************/
+.primary-content-section {
+	margin-top: 50px;
+  article {
+  	border: 1px solid black;
+  	margin: 10px;
+  	padding: 10px 30px;
+  	text-align: center;
+
+  	.icon-wrapper {
+  		display: inline-block;
+  		border: 1px solid black;
+  		padding: 15px;
+  		height: 50px;
+  		width: 50px;
+  		border-radius: 50%;
+      
+      &:hover {
+  		  background-color: lighten(teal, 10%);
+  		}
+  		span {
+  			font-size:1.8rem;
+  		}
+  	}
+
+  	p {
+  		text-align: justify;
+  	}
+
+     // change default speeed of modal 
+  	.modal.fade .modal-dialog {
+  		transition: transform 1s ease-in;
+    }
+  }
+}
+
+.secondary-content-section {
+	margin-top: 50px;
+
+	article {
+		padding: 0 5%;
+	}
+
+	aside {
+		text-align: center;
+
+		img  {
+			border-radius: 50%;
+		}
+
+		figcaption {
+			font-style: italic;
+			padding: 2% 15%;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
