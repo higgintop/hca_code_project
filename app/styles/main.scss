@@ -2,6 +2,11 @@
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons';
 
 /*******************************************************
+Color definitions
+*******************************************************/
+$link-color: black;
+$link-hover-color: lighten(#333, 80%);
+/*******************************************************
 Font definitions
 *******************************************************/
 @font-face {
@@ -25,9 +30,7 @@ Header Styles
 
 header {
 	margin-top: 0px;
-	background-image: url('/img/headerBackground.jpg');
-	background-size: cover;
-	background-position: center;
+	background: url('/img/headerBackground.jpg') center / cover;
 	box-shadow: inset 0 0 0 1000px rgba(255,255,255,.5);
 	padding: 20% 10%;
 	text-align: center;
@@ -98,10 +101,7 @@ Content Styles
 		}
 
 		.placeholder-img {
-			//content: url('../img/ah.jpg');
-			background-image: url('../img/ah.jpg');
-			background-size: cover;
-			background-position: center;
+			background: url('../img/ah.jpg') center / cover;
 			border-radius: 50%;
 			width: 300px;
 			height: 300px;
@@ -115,15 +115,12 @@ Content Styles
 }
 
 footer {
-	background-image: url('/img/headerBackground.jpg');
-	background-size: cover;
-	background-position: bottom;
+	background: url('/img/headerBackground.jpg') bottom / cover;
 	box-shadow: inset 0 0 0 1000px rgba(255,255,255,.5);
 	height: 20%;
 	font-weight: 900;
 	padding: 2% 5%;
 	text-align: center;
-
 
   .contact-info {
   	padding: 0;
@@ -131,11 +128,10 @@ footer {
   		list-style: none;
 
   		a {
-
-  			color: black;
+  			color: $link-color;
 
   			&:hover {
-  				color: lighten(#333, 80%);
+  				color: $link-hover-color;
   				text-decoration: none;
   			}
   		}
