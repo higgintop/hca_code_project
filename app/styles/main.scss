@@ -1,7 +1,18 @@
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons';
 
+/*******************************************************
+Font definitions
+*******************************************************/
+@font-face {
+  font-family: 'headerFont';
+  src: url('../fonts/nexarust/NexaRust.otf'); 
+}
 
+@font-face {
+  font-family: 'taglineFont';
+  src: url('../fonts/nexarust/NexaRustSansBlack.otf'); 
+}
 /*******************************************************
 Nav Styles
 ********************************************************/
@@ -16,15 +27,19 @@ header {
 	margin-top: 0px;
 	background-image: url('/img/headerBackground.jpg');
 	background-size: cover;
+	background-position: center;
+	box-shadow: inset 0 0 0 1000px rgba(255,255,255,.5);
 	padding: 20% 10%;
 	text-align: center;
 
 	h1 {
-		color: #fff;
+    font-family: headerFont;
+    font-size: 3rem;
 	}
 
 	p {
-		color: #fff;
+		font-family: taglineFont;
+		font-style: italic;
 	}
 }
 
@@ -77,7 +92,19 @@ Content Styles
 		text-align: center;
 
 		img  {
+			height: 200px;
+			width: 200px;
 			border-radius: 50%;
+		}
+
+		.placeholder-img {
+			//content: url('../img/ah.jpg');
+			background-image: url('../img/ah.jpg');
+			background-size: cover;
+			background-position: center;
+			border-radius: 50%;
+			width: 300px;
+			height: 300px;
 		}
 
 		figcaption {
@@ -85,7 +112,35 @@ Content Styles
 			padding: 2% 15%;
 		}
 	}
+}
 
+footer {
+	background-image: url('/img/headerBackground.jpg');
+	background-size: cover;
+	background-position: bottom;
+	box-shadow: inset 0 0 0 1000px rgba(255,255,255,.5);
+	height: 20%;
+	font-weight: 900;
+	padding: 2% 5%;
+	text-align: center;
+
+
+  .contact-info {
+  	padding: 0;
+  	li {
+  		list-style: none;
+
+  		a {
+
+  			color: black;
+
+  			&:hover {
+  				color: lighten(#333, 80%);
+  				text-decoration: none;
+  			}
+  		}
+  	}
+  }
 }
 
 
